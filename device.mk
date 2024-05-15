@@ -29,9 +29,6 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     com.google.android.apps.dialer.call_recording_audio.features.xml
 
-# Miuicamera
-$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
-
 # Camera
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/camera_cnf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_cnf.txt
